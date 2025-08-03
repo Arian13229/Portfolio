@@ -1,4 +1,4 @@
-##### 🌐 Persoonlijke Portfolio Website
+# 🌐 Persoonlijke Portfolio Website
 
 
 
@@ -6,7 +6,7 @@ Welkom bij mijn persoonlijke portfolio-website! Deze site is ontwikkeld om mijn 
 
 
 
-###### 📌 Inhoud
+### 📌 Inhoud
 
 
 
@@ -22,7 +22,7 @@ Welkom bij mijn persoonlijke portfolio-website! Deze site is ontwikkeld om mijn 
 
 
 
-###### ⚙️ Gebruikte Technologieën
+### ⚙️ Gebruikte Technologieën
 
 
 
@@ -42,7 +42,7 @@ Tool/Framework
 
 
 
-###### 🧪 Installatie en Development
+### 🧪 Installatie en Development
 
 
 
@@ -72,7 +72,7 @@ Volg deze stappen om de site lokaal te draaien:
 
 
 
-###### 📁 Projectstructuur
+### 📁 Projectstructuur
 
 
 
@@ -88,7 +88,7 @@ Volg deze stappen om de site lokaal te draaien:
 
 
 
-###### 👨‍💻 Over mij
+### 👨‍💻 Over mij
 
 
 
@@ -98,7 +98,7 @@ Ik ben een vierdejaars student Software Development aan de Hogeschool van Arnhem
 
 
 
-###### 📬 Contact
+### 📬 Contact
 
 
 
