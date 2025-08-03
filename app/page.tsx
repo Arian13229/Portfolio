@@ -9,14 +9,13 @@ import LoadingScreen from './components/LoadingScreen'
 export default function Home() {
   const currentYear = new Date().getFullYear()
 
-  // Aangepaste langzame smooth scroll functie
   const smoothScrollTo = (elementId: string) => {
     const element = document.getElementById(elementId)
     if (element) {
-      const targetPosition = element.offsetTop - 80 // 80px offset voor betere zichtbaarheid
+      const targetPosition = element.offsetTop - 80
       const startPosition = window.pageYOffset
       const distance = targetPosition - startPosition
-      const duration = 1200 // 1.2 seconden voor langzame scroll
+      const duration = 1200
       let start: number | null = null
 
       function animation(currentTime: number) {
@@ -27,7 +26,6 @@ export default function Home() {
         if (timeElapsed < duration) requestAnimationFrame(animation)
       }
 
-      // Easing functie voor soepele animatie
       function ease(t: number, b: number, c: number, d: number) {
         t /= d / 2
         if (t < 1) return (c / 2) * t * t + b
