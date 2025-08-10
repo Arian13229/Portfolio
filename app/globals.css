@@ -27,19 +27,16 @@ body {
 }
 
 html {
-  scroll-behavior: auto; /* Uitgeschakeld om custom scroll te gebruiken */
+  scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 
-/* Custom scroll styling voor betere controle */
 @media (prefers-reduced-motion: no-preference) {
-  /* Alleen custom scroll gebruiken als gebruiker motion accepteert */
-  * {
-    scroll-margin-top: 100px;
+  section {
+    scroll-margin-top: 80px;
   }
 }
 
-/* Custom scrollbar styling */
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(148, 163, 184, 0.5) transparent;
@@ -65,7 +62,6 @@ html {
   background: linear-gradient(45deg, rgba(100, 116, 139, 0.8), rgba(71, 85, 105, 0.9));
 }
 
-/* Dark mode scrollbar */
 .dark .custom-scrollbar {
   scrollbar-color: rgba(71, 85, 105, 0.7) transparent;
 }
@@ -115,47 +111,6 @@ html {
   opacity: 0.8;
 }
 
-/* Custom animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUpOnScroll {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out;
-}
-
-/* Profile photo animations */
 @keyframes heartbeat {
   0% {
     box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
@@ -197,19 +152,14 @@ html {
   animation: borderRotate 4s infinite ease-in-out;
 }
 
-.animation-delay-100 {
-  animation-delay: 0.1s;
+.animate-heartbeat {
+  animation: heartbeat 1.5s infinite ease-in-out;
 }
 
-.animation-delay-200 {
-  animation-delay: 0.2s;
+.animate-border-rotate {
+  animation: borderRotate 4s infinite ease-in-out;
 }
 
-.animation-delay-400 {
-  animation-delay: 0.4s;
-}
-
-/* Floating animation for geometric shapes */
 @keyframes float {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -229,44 +179,6 @@ html {
   animation: float 6s ease-in-out infinite;
 }
 
-.animation-delay-600 {
-  animation-delay: 0.6s;
-}
-
-.animation-delay-800 {
-  animation-delay: 0.8s;
-}
-
-/* Additional animation delays for loading screen */
-.animation-delay-300 {
-  animation-delay: 0.3s;
-}
-
-.animation-delay-500 {
-  animation-delay: 0.5s;
-}
-
-.animation-delay-700 {
-  animation-delay: 0.7s;
-}
-
-.animation-delay-900 {
-  animation-delay: 0.9s;
-}
-
-.animation-delay-1000 {
-  animation-delay: 1s;
-}
-
-.animation-delay-1100 {
-  animation-delay: 1.1s;
-}
-
-.animation-delay-1200 {
-  animation-delay: 1.2s;
-}
-
-/* Slow pulse animation for gradient orbs */
 @keyframes slowPulse {
   0% {
     opacity: 0.08;
@@ -286,19 +198,12 @@ html {
   animation: slowPulse 8s ease-in-out infinite;
 }
 
-/* Additional delays for random timing */
-.animation-delay-1600 {
-  animation-delay: 1.6s;
+.animation-delay-200 {
+  animation-delay: 200ms;
+  transition-delay: 200ms;
 }
 
-/* Scroll-triggered animations */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
+.animation-delay-400 {
+  animation-delay: 400ms;
+  transition-delay: 400ms;
 }
