@@ -71,7 +71,7 @@ export default function Contact() {
               className="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               <FaGithub className="text-lg" />
-              Bekijk code
+              Bekijk overzicht
             </a>
           </div>
         </div>
